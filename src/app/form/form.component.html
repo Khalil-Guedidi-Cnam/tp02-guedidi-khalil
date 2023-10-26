@@ -1,0 +1,45 @@
+<form (ngSubmit)="onSubmit()">
+    <label>
+        Nom: <input [(ngModel)]="nom" required>
+    </label>
+    <label>
+        Prénom: <input [(ngModel)]="prenom" required>
+    </label>
+    <label>
+        Adresse: <input [(ngModel)]="adresse" required>
+    </label>
+    <label>
+        CP: <input [(ngModel)]="cp" required>
+    </label>
+    <label>
+        Ville: <input [(ngModel)]="ville" required>
+    </label>
+    <label>
+        Tel: <input [(ngModel)]="tel" required>
+    </label>
+    <label>
+        Email: <input [(ngModel)]="email" required>
+    </label>
+    <label>
+        Civilité: <input [(ngModel)]="civ" required>
+    </label>
+    <label>
+        Login: <input [(ngModel)]="login" required>
+    </label>
+    <label>
+        MDP: <input [(ngModel)]="mdp" required>
+    </label>
+    <button type="submit">Valider</button>
+</form>
+<div [hidden]="!isFormSubmitted">
+    <p>Votre nom : {{nom}}</p>
+    <p>Votre prenom : {{prenom}}</p>
+    <p>Votre adresse : {{adresse}}</p>
+    <p>Votre cp : {{cp}}</p>
+    <p>Votre ville : {{ville}}</p>
+    <p>Votre tel : {{tel}}</p>
+    <p>Votre email : {{email}}</p>
+    <p>Votre civ : {{civ}}</p>
+    <p>Votre login : {{login}}</p>
+    <p>Votre mdp : {{mdp}}</p>
+</div>
